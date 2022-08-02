@@ -1,2 +1,2 @@
 # southern-wires
-southern wires website
+southern wires github page
