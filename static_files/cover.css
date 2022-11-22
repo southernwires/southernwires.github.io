@@ -60,7 +60,7 @@ body {
 .background-cover {
   --bs-bg-opacity: 1;
 
-  background: url(./gallery/cora_desert.jpg) no-repeat center center, linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  background: url(./gallery/cora_ducks.jpg) no-repeat center center, linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
