@@ -142,3 +142,9 @@ body {
 .zero-padding {
   padding: 0px 0px 0px 0px; 
 }
+.zero-border {
+  border: none;
+}
+.font-cursive-marker {
+  font-family: 'Permanent Marker', cursive;
+}
