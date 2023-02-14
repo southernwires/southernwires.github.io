@@ -138,3 +138,7 @@ body {
 .header-padding {
   padding: 65px;
 }
+
+.zero-padding {
+  padding: 0px 0px 0px 0px; 
+}
