@@ -1,404 +1,669 @@
 <!DOCTYPE html>
 <!-- saved from url=(0049)https://getbootstrap.com/docs/5.2/examples/cover/ -->
 <html lang="en" class="h-100">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Brandon Whitfield" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Brandon Whitfield">
-  
-  <title>Southern Wires</title>
+    <title>Southern Wires</title>
 
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
+    <link
+      href="./static_files/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
 
+    <!-- Favicons -->
 
-  
-  <link href="./static_files/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  
-  <!-- Favicons -->
-  
-  <link rel="icon" href="static_files/southern_wires_icon.png" sizes="16x16"type="image/png">
+    <link
+      rel="icon"
+      href="static_files/southern_wires_icon.png"
+      sizes="16x16"
+      type="image/png"
+    />
 
-  <!-- Fonts -->
-  
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Permanent+Marker&display=swap" rel="stylesheet">
-  
-  
-  <!-- Custom styles for this template -->
-  <link href="./static_files/cover.css" rel="stylesheet">
-  
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Fonts -->
 
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
 
-<body class="text-center text-white">
+    <!-- Custom styles for this template -->
+    <link href="./static_files/cover.css" rel="stylesheet" />
 
-  
-    <nav style="background:white;" class="navbar navbar-expand-lg mb-auto sticky-top navbar-inverse">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="text-center text-white">
+    <nav
+      style="background: white"
+      class="navbar navbar-expand-lg mb-auto sticky-top navbar-inverse"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          Southern Wires
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#"> Southern Wires </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <li
+              class="nav-item"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+            >
               <a class="nav-link" aria-current="page" href="#about">About</a>
             </li>
-            <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <li
+              class="nav-item"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+            >
               <a class="nav-link" href="#breeding">Breeding</a>
             </li>
-            <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <li
+              class="nav-item"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+            >
               <a class="nav-link" href="#litters">Litters</a>
             </li>
-            <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <li
+              class="nav-item"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+            >
               <a class="nav-link" href="#training">Training</a>
             </li>
-            <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <li
+              class="nav-item"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+            >
               <a class="nav-link" href="#females">Females</a>
             </li>
-            <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <li
+              class="nav-item"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+            >
               <a class="nav-link" href="#males">Males</a>
             </li>
-            <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <li
+              class="nav-item"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+            >
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    
-  <section id="home" class="py-0 overflow-hidden text-center">
-    <div class="container-fluid background-cover text-black">
-      <div class="row align-items-center">
-        <div style="padding-top: 30px; font-family: 'Rye', cursive;" class="col-sm vh-100">
-          
-          <img src="./static_files/southern_wires_logo.png" alt="" style="width: 60%" class="d-inline-block align-text-top">
-          
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="about" class="py-4 overflow-hidden background-gradient">
-    <div class="container text-black">
-      <div class="row align-items-center">
-        <div class="col header-padding">
-          <div style="margin:auto; height:50%">
-            <h1><span style="font-weight:bold">About</span> us</h1>
+    <section id="home" class="py-0 overflow-hidden text-center">
+      <div class="container-fluid background-cover text-black">
+        <div class="row align-items-center">
+          <div
+            style="padding-top: 30px; font-family: 'Rye', cursive"
+            class="col-sm vh-100"
+          >
+            <img
+              src="./static_files/southern_wires_logo.png"
+              alt=""
+              style="width: 60%"
+              class="d-inline-block align-text-top"
+            />
           </div>
         </div>
       </div>
-      <div class="row align-items-center">
-        <div class="col-sm">
-          <!-- <h1>things and words</h1> -->
-          <p class="font-size-bigga">
-            My wife, Stephanie, and I have owned wirehairs since 2015. During that time I began to train bird dogs on the side while working for the Peterbuilt manufacturing plant. 
-            After some careful thought I decided to leave my full-time job to open Southern Wires kennel. This has allowed me the opportunity to devote my time and effort towards producing
-            exceptional quality German Wirehairs while balancing a full training/testing roster of client dogs.  
-          </p>
-        </div>
-        <div class="col-sm">
-            <img src="./static_files/ryan_big_hat.webp" class="img-fluid" alt="...">
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="breeding" class="overflow-hidden">
-    <div class="container-fluid background-cover-sd text-white">
-      <div class="row align-items-center">
-        <div style="padding: 12%" class="col">
-            <h1><span style="font-weight:bold">Breeding</span> Philosophy</h1>
+    <section id="about" class="py-4 overflow-hidden background-gradient">
+      <div class="container text-black">
+        <div class="row align-items-center">
+          <div class="col header-padding">
+            <div style="margin: auto; height: 50%">
+              <h1><span style="font-weight: bold">About</span> us</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <!-- <h1>things and words</h1> -->
             <p class="font-size-bigga">
-              With every litter our highest priority is to breed dogs that excel in NAVHDA and walking field trials in accordance to the standards set by the 
-              Wirehair alliance.
-              Additionally, we aim to see stylish, honest points. 
-              Living in Texas hard feet and quality coats are non-negotiable as sand burs, cactus, and mesquite thorns thrive across the landscape.
-              We like our dogs a little hotter in the field, and to hit the water hard without reservations. Although geared higher, we like to balance their genetic
-              desires with a lot of cooperation.
+              My wife, Stephanie, and I have owned wirehairs since 2015. During
+              that time I began to train bird dogs on the side while working for
+              the Peterbuilt manufacturing plant. After some careful thought I
+              decided to leave my full-time job to open Southern Wires kennel.
+              This has allowed me the opportunity to devote my time and effort
+              towards producing exceptional quality German Wirehairs while
+              balancing a full training/testing roster of client dogs.
             </p>
+          </div>
+          <div class="col-sm">
+            <img
+              src="./static_files/ryan_big_hat.webp"
+              class="img-fluid"
+              alt="..."
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  
-  <section id="litters" class="py-4 overflow-hidden text-center background-gradient">
-    
-    <div class="container background-cover-white text-black">
-      <div class="row">
-        <div class="col header-padding">
+    </section>
+
+    <section id="breeding" class="overflow-hidden">
+      <div class="container-fluid background-cover-sd text-white">
+        <div class="row align-items-center">
+          <div style="padding: 12%" class="col">
+            <h1><span style="font-weight: bold">Breeding</span> Philosophy</h1>
+            <p class="font-size-bigga">
+              With every litter our highest priority is to breed dogs that excel
+              in NAVHDA and walking field trials in accordance to the standards
+              set by the Wirehair alliance. Additionally, we aim to see stylish,
+              honest points. Living in Texas hard feet and quality coats are
+              non-negotiable as sand burs, cactus, and mesquite thorns thrive
+              across the landscape. We like our dogs a little hotter in the
+              field, and to hit the water hard without reservations. Although
+              geared higher, we like to balance their genetic desires with a lot
+              of cooperation.
+            </p>
+          </div>
         </div>
       </div>
-      <div style="margin:auto; height:50%">
-        <h1><span style="font-weight:bold">Upcoming</span> Litters</h1>
+    </section>
+
+    <section
+      id="litters"
+      class="py-4 overflow-hidden text-center background-gradient"
+    >
+      <div class="container background-cover-white text-black">
+        <div class="row">
+          <div class="col header-padding"></div>
+        </div>
+        <div style="margin: auto; height: 50%">
+          <h1><span style="font-weight: bold">Upcoming</span> Litters</h1>
+        </div>
+        <div class="row">
+          <div class="col header-padding">
+            <div style="margin: auto; height: 50%">
+              <h4>Winter 2023</h4>
+              <h3>Cora x Gravy</h3>
+              <p>
+                We are proud to announce Cora x Gravy for 2023! Please reach out
+                if you are interested in a puppy from this litter - there are
+                still spots available!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row card-row">
+          <div class="col pb-5">
+            <div class="card card-size">
+              <img
+                src="./static_files/cora_headshot.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Griffs Southern Lady SH NA1 UT1</h5>
+                <p style="font-style: italic">Cora</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a
+                    href="https://www.ofa.org/advanced-search?f=sr&appnum=2136494"
+                    >Health Tests(OFA)</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="https://navhda.us/Reports/ReportToPDF.aspx?FN=PedigreeOfficeDistShort&single=true&ExportType=PDF&ExportBookmarks=false&blnPedigree=0&blnIncludeLinks=1&strStartNAVHDANum=010772&strEndNAVHDANum=010772&strRegNum=SS01129505&strBreedCd=GW"
+                    >Pedigree</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="https://www.navhda.us/Reports/ReportToPDF.aspx?single=true&ExportType=PDF&FN=DogBookTest&strDogNAVNum=010772&strBreedCd=GW"
+                    >Test Results</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="https://www.navhda.us/Reports/ReportToPDF.aspx?single=true&ExportType=PDF&FN=SireDamTest&ExportBookmarks=false&strQueryType=Dam&strDamNAVNum=010772&strBreedCd=GW"
+                    >Progeny Test Results</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col pb-5">
+            <div class="card card-size">
+              <img
+                src="./static_files/gravy.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  VC Holden Point's Deshootes River Runner UT1 NA3
+                </h5>
+                <p style="font-style: italic">Gravy</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="https://ofa.org/advanced-search/?appnum=2449337"
+                    >Health Tests(OFA)</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="https://navhda.us/Reports/ReportToPDF.aspx?FN=PedigreeOfficeDistShort&single=true&ExportType=PDF&ExportBookmarks=false&blnPedigree=0&blnIncludeLinks=1&strStartNAVHDANum=012726&strEndNAVHDANum=012726&strRegNum=SS23282607&strBreedCd=GW"
+                    >Pedigree</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="https://www.navhda.us/Reports/ReportToPDF.aspx?single=true&ExportType=PDF&FN=DogBookTest&strDogNAVNum=012726&strBreedCd=GW"
+                    >Test Results</a
+                  >
+                </li>
+                <li class="list-group-item">Progeny Test Results N/A</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col header-padding">
+            <div style="margin: auto; height: 50%">
+              <h4>Spring 2024</h4>
+              <h3>Sileaux x Lorrie</h3>
+              <!-- <p>We are putting together a breeding for Lorrie this upcoming year following her Utility run this fall. When we have narrowed down on the stud we will post him here!</p> -->
+              <p>
+                “Sileaux” Sileaux is a lucky dog that gets to join for
+                biological surveys, hunting upland birds, rabbits, waterfowl,
+                turkeys and blood tracking deer. Sileaux is a natural retriever,
+                he loves picking up marks just as much as the Labradors he
+                trains with. Sileaux marks extremely well and doesn't give up on
+                a hunt until he comes up with the bird. He has performed well in
+                retrieving events and received his UKC hunting retriever (HR)
+                title at 15 months old. This test required a double mark and
+                blind on both land and water. Sileaux can go from running a
+                controlled blind with complete focus on the handler to an
+                independent duck search with just a switch of the command.
+                Sileaux earned his first two finished retriever passes towards
+                his hunting retriever champion (HRCH) title he will hopefully
+                complete in 2024. He lives on the North Dakota Prairie where he
+                regularly hunts wild grouse, pheasants and does a tremendous
+                amount of waterfowl hunting. He has had a number of field trial
+                placements and will be competing in the GWPCA horseback field
+                trials this fall in Nebraska. While Sileaux is a force to be
+                reckoned with in the field he also has an amazing off switch. He
+                loves accompanying his owner to the office where he snoozes on
+                his dog bed and gets lots of pets and patiently entertains
+                himself inside when the harsh North Dakota winter makes it tough
+                to get out.
+              </p>
+              <p>
+                “Lorrie” In the field, Lorrie has a strong honest, stylish
+                point, and a great natural retrieve. She has an intense natural
+                “back”, and learned fast where to find birds. She has hunted
+                West Texas, Oklahoma, and the Montana Prairies extensively. Her
+                first season she spent a few months up north learning all about
+                wild birds. This last trip to Montana she successfully pointed
+                Huns, Sharptails and Pheasants, and retained her steadiness
+                throughout the trip. She found birds on every drop. Lorrie is a
+                young cooperative dog that loves to please. We recently ran her
+                in NAVHDA Utility with very little preparation, and did very
+                well. She will likley run again this spring when I have more
+                time to give her the training she lacked this go round. Lorrie
+                possesses her mothers desire to retrieve, land or water. She is
+                quiet in the duck blind, and excels at marking and tracking down
+                wounded ducks, and never gives up on a chase. Lorrie's calm
+                temperament and excellent disposition is one of my favorite
+                qualities of her. Her off switch is as good as her “on” switch.
+                Around the house she will entertain herself, and is ok lounging
+                around all day in the yard. She has a great coat, and muscular,
+                balanced build, which makes her a very “pretty” mover.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row card-row">
+          <div class="col pb-5">
+            <div class="card card-size">
+              <img
+                src="./static_files/lorrie_marsh.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Southern Wires Good Lord Lorrie NA1 UT2
+                </h5>
+                <p style="font-style: italic">Lorrie</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="https://ofa.org/advanced-search/?appnum=2463919"
+                    >OFA</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="https://navhda.us/Reports/ReportToPDF.aspx?FN=PedigreeOfficeDistShort&single=true&ExportType=PDF&ExportBookmarks=false&blnPedigree=0&blnIncludeLinks=1&strStartNAVHDANum=013045&strEndNAVHDANum=013045&strBreedCd=GW"
+                    >Pedigree</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="https://www.navhda.us/Reports/ReportToPDF.aspx?single=true&ExportType=PDF&FN=DogBookTest&strDogNAVNum=013045&strBreedCd=GW"
+                    >Test Results</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col pb-5">
+            <div class="card card-size">
+              <img
+                src="./static_files/sileaux.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <!-- <div style="height:100%;width:100%;" class="align-middle"><h1></h1></div> -->
+              <div class="card-body">
+                <h5 class="card-title">
+                  AM CH HR Bachman Bay Immobulus NAVHDA NA1 UT1
+                </h5>
+                <p style="font-style: italic">Sileaux</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="https://ofa.org/advanced-search/?appnum=2356159"
+                    >OFA</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="https://navhda.us/Reports/ReportToPDF.aspx?FN=PedigreeOfficeDistShort&single=true&ExportType=PDF&ExportBookmarks=false&blnPedigree=0&blnIncludeLinks=1&strStartNAVHDANum=012151&strEndNAVHDANum=012151&strBreedCd=GW"
+                    >Pedigree</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="https://www.navhda.us/Reports/ReportToPDF.aspx?single=true&ExportType=PDF&FN=DogBookTest&strDogNAVNum=012151&strBreedCd=GW"
+                    >Test Results</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col header-padding">
-          <div style="margin:auto; height:50%">
-            <h4>Winter 2023</h4>
-            <h3>Cora x Gravy</h3>
+    </section>
+    <section id="training" class="py-4 overflow-hidden text-center">
+      <div class="container-fluid background-cover-ph text-white">
+        <div class="row align-items-center">
+          <div style="padding: 12%" class="col">
+            <h1><span style="font-weight: bold">Training</span> & Handling</h1>
+            <p class="font-size-bigga">
+              As a professional trainer I run client dogs in akc horseback
+              trials, NSTRA trials, and NAVHDA tests. I specialize in force
+              fetch, collar conditioning, obedience, basic retrieving,
+              conditioning to gunfire, steadiness(to fall if desired), water
+              work(including duck search). As part of finishing client dogs I
+              use very wild recall birds which keeps the style intact and their
+              handling of birds sharp. For training, I prefer dogs to be 6
+              months and older. My waiting list is 4-6 months typically, but
+              please call because drops do happen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="females" class="py-4 overflow-hidden background-gradient">
+      <div class="container-fluid text-black">
+        <div class="row align-items-center">
+          <div style="padding: 5%" class="col header-padding">
+            <div style="margin: auto; height: 50%">
+              <h1><span style="font-weight: bold">The</span> females</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <div class="card text-white zero-border">
+              <img
+                src="./static_files/lorrie_pointing_style.jpg"
+                class="rounded-0 card-img img-fluid"
+                alt="..."
+              />
+
+              <div class="card-img-overlay">
+                <h5 class="card-title font-cursive-marker">
+                  Southern Wires Good Lord Lorrie NA1 UT1
+                </h5>
+                <p class="font-cursive-marker">Lorrie</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-white zero-border">
+              <img
+                src="./static_files/reba_pointing.jpg"
+                class="rounded-0 card-img img-fluid"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <h5 class="card-title font-cursive-marker">
+                  Southern Wires One Chance Fancy NA2
+                </h5>
+                <p class="font-cursive-marker">Reba</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card text-white zero-border">
+              <img
+                src="./static_files/cora_pointing_left.jpg"
+                class="rounded-0 card-img img-fluid"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <h5 class="card-title font-cursive-marker">
+                  Griffs Southern Lady SH NA1 UT1
+                </h5>
+                <p class="font-cursive-marker">Cora</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card text-white zero-border">
+              <img
+                src="./static_files/marfa_pointing.jpg"
+                class="rounded-0 card-img img-fluid"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <h5 class="card-title font-cursive-marker">
+                  Southern Wires Marfa Lights NA1
+                </h5>
+                <p class="font-cursive-marker">Marfa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="males" class="py-4 overflow-hidden background-gradient">
+      <div class="container-fluid text-black">
+        <div class="row align-items-center">
+          <div style="padding: 5%" class="col header-padding">
+            <div style="margin: auto; height: 50%">
+              <h1><span style="font-weight: bold">The</span> males</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center" style="justify-content: center">
+          <div class="col" style="max-width: 454px; max-height: 354px">
+            <div class="card text-white zero-border">
+              <img
+                src="./static_files/bear.jpg"
+                class="rounded-0 card-img img-fluid"
+                alt="..."
+              />
+
+              <div class="card-img-overlay">
+                <h5 class="card-title font-cursive-marker">
+                  Southern Wires Wojtek The Bear NA1
+                </h5>
+                <p class="font-cursive-marker">Bear</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="py-4 overflow-hidden text-center background-gradient"
+    >
+      <div class="container-fluid text-black">
+        <div class="row align-items-center">
+          <div style="padding: 12%" class="col">
+            <h1><span style="font-weight: bold">Reach</span> us</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div style="margin-bottom: 8%" class="col-sm">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <h5>Address</h5>
             <p>
-                We are proud to announce Cora x Gravy for 2023! Please reach out if you are interested in a puppy from this litter - there are still spots available!
+              13603 US Highway 82 east <br />
+              Nocona TX, 76255
             </p>
           </div>
-        </div>
-      </div>
 
-      <div class="row card-row">
-        <div class="col pb-5">
-          <div class="card card-size">
-            <img src="./static_files/cora_headshot.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Griffs Southern Lady SH NA1 UT1</h5>
-              <p style="font-style: italic;">Cora</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><a href="https://www.ofa.org/advanced-search?f=sr&appnum=2136494">Health Tests(OFA)</a></li>
-              <li class="list-group-item"><a href="https://navhda.us/Reports/ReportToPDF.aspx?FN=PedigreeOfficeDistShort&single=true&ExportType=PDF&ExportBookmarks=false&blnPedigree=0&blnIncludeLinks=1&strStartNAVHDANum=010772&strEndNAVHDANum=010772&strRegNum=SS01129505&strBreedCd=GW">Pedigree</a></li>
-              <li class="list-group-item"><a href="https://www.navhda.us/Reports/ReportToPDF.aspx?single=true&ExportType=PDF&FN=DogBookTest&strDogNAVNum=010772&strBreedCd=GW">Test Results</a></li>
-              <li class="list-group-item"><a href="https://www.navhda.us/Reports/ReportToPDF.aspx?single=true&ExportType=PDF&FN=SireDamTest&ExportBookmarks=false&strQueryType=Dam&strDamNAVNum=010772&strBreedCd=GW">Progeny Test Results</a></li>
-            </ul>
+          <div style="margin-bottom: 8%" class="col-sm">
+            <i class="fa-solid fa-phone-flip"></i>
+            <h5>Cell</h5>
+            <p>(940)390-1084</p>
           </div>
-        </div>
-        <div class="col pb-5">
-          <div class="card card-size">
-            <img src="./static_files/gravy.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">VC Holden Point's Deshootes River Runner UT1 NA3</h5>
-              <p style="font-style: italic;">Gravy</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><a href="https://ofa.org/advanced-search/?appnum=2449337">Health Tests(OFA)</a></li>
-              <li class="list-group-item"><a href="https://navhda.us/Reports/ReportToPDF.aspx?FN=PedigreeOfficeDistShort&single=true&ExportType=PDF&ExportBookmarks=false&blnPedigree=0&blnIncludeLinks=1&strStartNAVHDANum=012726&strEndNAVHDANum=012726&strRegNum=SS23282607&strBreedCd=GW">Pedigree</a></li>
-              <li class="list-group-item"><a href="https://www.navhda.us/Reports/ReportToPDF.aspx?single=true&ExportType=PDF&FN=DogBookTest&strDogNAVNum=012726&strBreedCd=GW">Test Results</a></li>
-              <li class="list-group-item">Progeny Test Results N/A</li>
-            </ul>
-          </div>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col header-padding">
-          <div style="margin:auto; height:50%">
-            <h4>Spring 2024</h4>
-            <h3>Sileaux x Lorrie</h3>
-            <!-- <p>We are putting together a breeding for Lorrie this upcoming year following her Utility run this fall. When we have narrowed down on the stud we will post him here!</p> -->
-            <p>“Sileaux” 
-              Sileaux is a lucky dog that gets to join for biological surveys, hunting upland birds, rabbits, waterfowl, turkeys and blood tracking deer. Sileaux is a natural retriever, he loves picking up marks just as much as the Labradors he trains with. Sileaux marks extremely well and doesn't give up on a hunt until he comes up with the bird. He has performed well in retrieving events and received his UKC hunting retriever (HR) title at 15 months old. This test required a double mark and blind on both land and water. Sileaux can go from running a controlled blind with complete focus on the handler to an independent duck search with just a switch of the command. Sileaux earned his first two finished retriever passes towards his hunting retriever champion (HRCH) title he will hopefully complete in 2024. He lives on the North Dakota Prairie where he regularly hunts wild grouse, pheasants and does a tremendous amount of waterfowl hunting. He has had a number of field trial placements and will be competing in the GWPCA horseback field trials this fall in Nebraska. 
-              While Sileaux is a force to be reckoned with in the field he also has an amazing off switch. He loves accompanying his owner to the office where he snoozes on his dog bed and gets lots of pets and patiently entertains himself inside when the harsh North Dakota winter makes it tough to get out.</p>
-            <p>“Lorrie”
-              In the field, Lorrie has a strong honest, stylish point, and a great natural retrieve. She has an intense natural “back”, and learned fast where to find birds.  She has hunted West Texas, Oklahoma, and the Montana Prairies extensively. Her first season she spent a few months up north learning all about wild birds. This last trip to Montana she successfully pointed Huns, Sharptails and Pheasants, and retained her steadiness throughout the trip. She found birds on every drop. Lorrie is a young cooperative dog that loves to please. We recently ran her in NAVHDA Utility with very little preparation, and did very well. She will likley run again this spring when I have more time to give her the training she lacked this go round. Lorrie possesses her mothers desire to retrieve, land or water. She is quiet in the duck blind, and excels at marking and tracking down wounded ducks, and never gives up on a chase. 
-              Lorrie's calm temperament and excellent disposition is one of my favorite qualities of her. Her off switch is as good as her “on” switch. Around the house she will entertain herself, and is ok lounging around all day in the yard. She has a great coat, and muscular, balanced build, which makes her a very “pretty” mover.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row card-row">
-        <div class="col pb-5">
-          <div class="card card-size">
-            <img src="./static_files/lorrie_marsh.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Southern Wires Good Lord Lorrie NA1 UT2</h5>
-              <p style="font-style: italic;">Lorrie</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><a href="https://ofa.org/advanced-search/?appnum=2463919">OFA</a></li>
-              <li class="list-group-item"><a href="https://navhda.us/Reports/ReportToPDF.aspx?FN=PedigreeOfficeDistShort&single=true&ExportType=PDF&ExportBookmarks=false&blnPedigree=0&blnIncludeLinks=1&strStartNAVHDANum=013045&strEndNAVHDANum=013045&strBreedCd=GW">Pedigree</a></li>
-              <li class="list-group-item"><a href="https://www.navhda.us/Reports/ReportToPDF.aspx?single=true&ExportType=PDF&FN=DogBookTest&strDogNAVNum=013045&strBreedCd=GW">Test Results</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col pb-5">
-          <div class="card card-size">
-            <img src="./static_files/sileaux.jpeg" class="card-img-top" alt="...">
-            <!-- <div style="height:100%;width:100%;" class="align-middle"><h1></h1></div> -->
-            <div class="card-body">
-              <h5 class="card-title">AM CH HR Bachman Bay Immobulus NAVHDA NA1 UT1</h5>
-              <p style="font-style: italic;">Sileaux</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><a href="https://ofa.org/advanced-search/?appnum=2356159">OFA</a></li>
-              <li class="list-group-item"><a href="https://navhda.us/Reports/ReportToPDF.aspx?FN=PedigreeOfficeDistShort&single=true&ExportType=PDF&ExportBookmarks=false&blnPedigree=0&blnIncludeLinks=1&strStartNAVHDANum=012151&strEndNAVHDANum=012151&strBreedCd=GW">Pedigree</a></li>
-              <li class="list-group-item"><a href="https://www.navhda.us/Reports/ReportToPDF.aspx?single=true&ExportType=PDF&FN=DogBookTest&strDogNAVNum=012151&strBreedCd=GW">Test Results</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <section id="training" class="py-4 overflow-hidden text-center">
-    <div class="container-fluid background-cover-ph text-white">
-      <div class="row align-items-center">
-        <div style="padding: 12%" class="col">
-            <h1><span style="font-weight:bold">Training</span> & Handling</h1>
-            <p class="font-size-bigga">
-              As a professional trainer I run client dogs in akc horseback trials, NSTRA trials, and NAVHDA tests.
-              I specialize in force fetch, collar conditioning, obedience, basic retrieving, conditioning to gunfire, steadiness(to fall if desired), water work(including duck search). 
-              As part of finishing client dogs I use very wild recall birds which keeps the style intact and their handling of birds sharp. For training, I prefer dogs to be 6 months and older. 
-              My waiting list is 4-6 months typically, but please call because drops do happen.  
-            </p>
-          </div>
-        </div>
-      </div>
-  </section>
-  
-  <section id="females" class="py-4 overflow-hidden background-gradient">
-    <div class="container-fluid text-black">
-      <div class="row align-items-center">
-        <div style="padding: 5%" class="col header-padding">
-          <div style="margin:auto; height:50%">
-            <h1><span style="font-weight:bold">The</span> females</h1>
-          </div>
-        </div>
-      </div>
-      <div class="row align-items-center">
-        <div class="col-sm">
-          <div class="card text-white zero-border">
-            <img src="./static_files/lorrie_pointing_style.jpg" class="rounded-0 card-img img-fluid" alt="...">
-            
-            <div class="card-img-overlay">
-              <h5 class="card-title font-cursive-marker">Southern Wires Good Lord Lorrie NA1 UT2</h5>
-              <p class="font-cursive-marker">Lorrie</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card text-white zero-border">
-            <img src="./static_files/reba_pointing.jpg" class="rounded-0 card-img img-fluid" alt="...">
-            <div class="card-img-overlay">
-              <h5 class="card-title font-cursive-marker">Southern Wires One Chance Fancy NA2</h5>
-              <p class="font-cursive-marker">Reba</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="card text-white zero-border">
-            <img src="./static_files/cora_pointing_left.jpg" class="rounded-0 card-img img-fluid" alt="...">
-            <div class="card-img-overlay">
-              <h5 class="card-title font-cursive-marker">Griffs Southern Lady SH NA1 UT1</h5>
-              <p class="font-cursive-marker">Cora</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section id="males" class="py-4 overflow-hidden background-gradient">
-    <div class="container-fluid text-black">
-      <div class="row align-items-center">
-        <div style="padding: 5%" class="col header-padding">
-          <div style="margin:auto; height:50%">
-            <h1><span style="font-weight:bold">The</span> males</h1>
-          </div>
-        </div>
-      </div>
-      <div class="row align-items-center" style="justify-content: center;">
-        
-        <div class="col" style="max-width: 454px; max-height: 354px">
-          <div class="card text-white zero-border">
-            <img src="./static_files/bear.jpg" class="rounded-0 card-img img-fluid" alt="...">
-            
-            <div class="card-img-overlay">
-              <h5 class="card-title font-cursive-marker">Southern Wires Wojtek The Bear NA1</h5>
-              <p class="font-cursive-marker">Bear</p>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-  
-  
-
-  <section id="contact" class="py-4 overflow-hidden text-center background-gradient">
-    <div class="container-fluid text-black">
-      <div class="row align-items-center">
-        <div style="padding: 12%" class="col">
-            <h1><span style="font-weight:bold">Reach</span> us</h1>
-          </div>
-        </div>
-      <div class="row">
-        <div style="margin-bottom: 8%" class="col-sm">
-          <i class="fa-solid fa-map-location-dot"></i>  
-          <h5>Address</h5>
-          <p>13603 US Highway 82 east <br/> Nocona TX, 76255</p>
-          </div>
-        
-        <div style="margin-bottom: 8%" class="col-sm">
-          <i class="fa-solid fa-phone-flip"></i>
-          <h5>Cell</h5>
-          <p>(940)390-1084</p>
-          </div>
-        
           <div style="margin-bottom: 8%" class="col-sm">
             <i class="fa-solid fa-envelope"></i>
-          <h5>Email</h5>
-          <p>southernwireskennel@gmail.com</p>
+            <h5>Email</h5>
+            <p>southernwireskennel@gmail.com</p>
           </div>
-        
+
           <div style="margin-bottom: 8%" class="col-sm">
-           <a href="https://www.facebook.com/Southern-Wires-Kennel-104987111985492"><i style="font-size: 65px" class="fa-brands fa-facebook"></i></a> 
+            <a
+              href="https://www.facebook.com/Southern-Wires-Kennel-104987111985492"
+              ><i style="font-size: 65px" class="fa-brands fa-facebook"></i
+            ></a>
           </div>
           <div style="margin-bottom: 8%" class="col-sm">
-            <a href="https://www.instagram.com/southern_wires/"><i style="font-size: 65px" class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/southern_wires/"
+              ><i style="font-size: 65px" class="fa-brands fa-instagram"></i
+            ></a>
           </div>
         </div>
       </div>
-  </section>
+    </section>
 
-  <section>
-    <div class="container background-cover-white text-black">
-      <div class="row">
-        <div class="col header-padding">
-          <div style="margin:auto; height:50%">
-            <h1>Organizations</h1>
+    <section>
+      <div class="container background-cover-white text-black">
+        <div class="row">
+          <div class="col header-padding">
+            <div style="margin: auto; height: 50%">
+              <h1>Organizations</h1>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
+      <div class="container">
+        <div class="row">
           <div class="col-sm py-3">
-              <div class="card" style="border:none; padding-bottom:20px;">
-                  <img style="max-width: 18rem; margin: auto;" src="./static_files/sponsor_logos/navhda_logo.jpeg" class="card-img-top">
-              </div>
+            <div class="card" style="border: none; padding-bottom: 20px">
+              <img
+                style="max-width: 18rem; margin: auto"
+                src="./static_files/sponsor_logos/navhda_logo.jpeg"
+                class="card-img-top"
+              />
+            </div>
           </div>
           <div class="col-sm py-3">
-              <div class="card" style="border:none; padding-bottom:20px;">
-                  <img style="max-width: 18rem; margin: auto;" src="./static_files/sponsor_logos/nstra_logo.gif" class="card-img-top">
-              </div>
+            <div class="card" style="border: none; padding-bottom: 20px">
+              <img
+                style="max-width: 18rem; margin: auto"
+                src="./static_files/sponsor_logos/nstra_logo.gif"
+                class="card-img-top"
+              />
+            </div>
           </div>
           <div class="col-sm py-3">
-              <div class="card" style="border:none; padding:25% 0%;">
-                  <img style="max-width: 18rem; margin: auto;" src="./static_files/sponsor_logos/gwa_logo.webp" class="card-img-top">
-              </div>
+            <div class="card" style="border: none; padding: 25% 0%">
+              <img
+                style="max-width: 18rem; margin: auto"
+                src="./static_files/sponsor_logos/gwa_logo.webp"
+                class="card-img-top"
+              />
+            </div>
           </div>
           <div class="col-sm py-3">
-              <div class="card" style="border:none; padding-bottom:20px;">
-                  <img style="max-width: 18rem; margin: auto;" src="./static_files/sponsor_logos/akc_logo.png" class="card-img-top">
-              </div>
+            <div class="card" style="border: none; padding-bottom: 20px">
+              <img
+                style="max-width: 18rem; margin: auto"
+                src="./static_files/sponsor_logos/akc_logo.png"
+                class="card-img-top"
+              />
+            </div>
           </div>
+        </div>
       </div>
-    </div>
-  </section>
-
-
-</body>
-
+    </section>
+  </body>
 </html>
